@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Résiva - Maison de campagne</title>
+</head>
+
+<body>
+    <header>
+        <img src="../../../../assets/picture/logo_resiva.png" alt="Logo Resiva" id="logo_resiva">
+        <h1>Resiva : votre site de location en ligne</h1>
+    </header>
+
+    <main>
+        <div id="container">
+            <div>
+                <a href="../../../../index.html">
+                    <button class="btn_accueil">Accueil</button>
+                </a>
+            </div>
+            <div id="box_categorie">
+                <h2>Maison de campagne</h2>
+            </div>
+        </div>
+        <section id="main_box">
+            <!-- Détails complets de la Maison de campagne -->
+            <div class="box_article">
+                <h3>Maison de campagne</h3>
+                <div class="image_">
+                    <img src="../../assets/img/maison_campagne1.png" alt="Maison de campagne" class="img_left">
+                    <div class="double_imge">
+                        <img src="../../assets/img/maison_campagne2.png" alt="Intérieur de la maison de campagne"
+                            class="img_top_right">
+                        <img src="../../assets/img/maison_campagne3.png" alt="Terrasse de la maison"
+                            class="img_bottom_right">
+                    </div>
+                </div>
+                <p>Prix : 180€/nuit <br> Capacité : 6 personnes <br>
+                    Cette charmante maison de campagne est parfaite pour une retraite paisible, offrant un environnement
+                    calme avec tout le confort moderne. <br>
+                    Profitez de sa grande terrasse, de son salon spacieux et de sa cuisine entièrement équipée pour des
+                    moments conviviaux en famille ou entre amis.
+                </p>
+                <ul>
+                    <li>3 chambres spacieuses</li>
+                    <li>Grande cuisine équipée</li>
+                    <li>Salon avec cheminée</li>
+                    <li>Terrasse avec vue sur le jardin</li>
+                    <li>Wi-Fi gratuit</li>
+                    <li>Parking privé</li>
+                </ul>
+                <!-- Formulaire de réservation -->
+                <form action="https://api.web3forms.com/submit" method="POST" id="reservation_form">
+                    <!-- Replace with your Access Key -->
+                    <input type="hidden" name="apikey" value="9fdbc500-0363-4f8e-b8a5-835d2d7220b4">
+                
+                    <!-- Form Inputs -->
+                    <div class="form_group">
+                        <label for="name">Nom :</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                
+                    <div class="form_group">
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" name="prenom" id="prenom" required>
+                    </div>
+                
+                    <div class="form_group">
+                        <label for="email">Email :</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                
+                    <div class="form_group">
+                        <label for="date">Date de réservation :</label>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+                
+                    <div class="form_group">
+                        <label for="heure">Heure d'arrivée :</label>
+                        <input type="time" name="heure" id="heure" required>
+                    </div>
+                
+                    <div class="form_group">
+                        <label for="nombre_personnes">Nombre de personnes :</label>
+                        <input type="number" name="nombre_personnes" id="nombre_personnes" min="1" required>
+                    </div>
+                
+                    <div class="form_group">
+                        <label for="message">Message (optionnel) :</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                
+                    <div class="form_group">
+                        <label for="retour">Souhaitez-vous être recontacté ?</label>
+                        <input type="checkbox" id="retour" name="retour">
+                    </div>
+                
+                    <!-- Custom Confirmation / Success Page -->
+                    <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html">
+                
+                    <div class="box_article">
+                        <button type="submit" class="btn_accueil">Réserver</button>
+                    </div>
+                </form>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_info">
+            <div class="footer_section">
+                <h3>Contact</h3>
+                <p>Gérant : Baptiste Nuytten</p>
+                <p>Téléphone : +33 1 23 45 67 89</p>
+                <p>Email : contact@resiva.fr</p>
+            </div>
+
+            <div class="footer_section">
+                <h3>Siège social</h3>
+                <p>Adresse : 10 rue Alfred Kastler, 14000 Caen, France</p>
+            </div>
+
+            <div class="footer_section">
+                <h3>Mentions légales</h3>
+                <p>© 2024 Résiva. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

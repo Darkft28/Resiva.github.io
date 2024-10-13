@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Résiva - Villa moderne avec piscine</title>
+</head>
+
+<body>
+    <header>
+        <img src="../../../../assets/picture/logo_resiva.png" alt="Logo Resiva" id="logo_resiva">
+        <h1>Resiva : votre site de location en ligne</h1>
+    </header>
+
+    <main>
+        <div id="container">
+            <div>
+                <a href="../../../../index.html">
+                    <button class="btn_accueil">Accueil</button>
+                </a>
+            </div>
+            <div id="box_categorie">
+                <h2>Villa moderne avec piscine</h2>
+            </div>
+        </div>
+
+        <section id="main_box">
+            <div class="box_article">
+                <h3>Villa moderne avec piscine et vue sur la mer</h3>
+                <div class="image_">
+                    <img src="../../assets/img/villa_mer1.png" alt="Villa moderne avec vue sur la mer" class="img_left">
+                    <div class="double_imge">
+                        <img src="../../assets/img/villa_mer2.png" alt="Intérieur de la villa moderne" class="img_top_right">
+                        <img src="../../assets/img/villa_mer3.png" alt="Intérieur de la villa moderne" class="img_bottom_right">
+                    </div>
+                </div>
+                <p>Prix : 400€/nuit <br> Capacité : 8 personnes <br>
+                    Luxueuse villa moderne avec piscine privée et vue panoramique sur la mer. Un cadre parfait pour
+                    passer des vacances inoubliables en famille ou entre amis.
+                </p>
+
+                <h4>Caractéristiques :</h4>
+                <ul>
+                    <li>Surface : 350 m²</li>
+                    <li>Chambres : 4</li>
+                    <li>Salles de bain : 2</li>
+                    <li>Équipements : Wi-Fi, climatisation, cuisine équipée, piscine</li>
+                    <li>Accès : Parking privé, jardin</li>
+                </ul>
+
+                <!-- Formulaire de réservation -->
+                <form action="https://api.web3forms.com/submit" method="POST" id="reservation_form">
+                    <input type="hidden" name="apikey" value="9fdbc500-0363-4f8e-b8a5-835d2d7220b4">
+
+                    <div class="form_group">
+                        <label for="name">Nom :</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" name="prenom" id="prenom" required>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="email">Email :</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="date">Date de réservation :</label>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="heure">Heure d'arrivée :</label>
+                        <input type="time" name="heure" id="heure" required>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="nombre_personnes">Nombre de personnes :</label>
+                        <input type="number" name="nombre_personnes" id="nombre_personnes" min="1" required>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="message">Message (optionnel) :</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="retour">Souhaitez-vous être recontacté ?</label>
+                        <input type="checkbox" id="retour" name="retour">
+                    </div>
+
+                    <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html">
+
+                    <div class="box_article">
+                        <button type="submit" class="btn_accueil">Réserver</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_info">
+            <div class="footer_section">
+                <h3>Contact</h3>
+                <p>Gérant : Baptiste Nuytten</p>
+                <p>Téléphone : +33 1 23 45 67 89</p>
+                <p>Email : contact@resiva.fr</p>
+            </div>
+
+            <div class="footer_section">
+                <h3>Siège social</h3>
+                <p>Adresse : 10 rue Alfred Kastler, 14000 Caen, France</p>
+            </div>
+
+            <div class="footer_section">
+                <h3>Mentions légales</h3>
+                <p>© 2024 Résiva. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

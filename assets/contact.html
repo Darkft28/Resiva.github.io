@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Contact - Résiva</title>
+</head>
+
+<body>
+    <header>
+        <img src="../assets/picture/logo_resiva.png" alt="Logo Resiva" id="logo_resiva">
+        <h1>Contactez-nous</h1>
+    </header>
+
+    <main>
+        <section id="contact_form">
+            <h2>Formulaire de contact</h2>
+            <div class="box_article">
+                <a href="../index.html" class="btn_accueil">Accueil</a>
+            </div>
+            <form action="https://api.web3forms.com/submit" method="POST" id="reservation_form">
+                <input type="hidden" name="apikey" value="9fdbc500-0363-4f8e-b8a5-835d2d7220b4">
+
+                <div class="form_group">
+                    <label for="name">Nom :</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+
+                <div class="form_group">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" name="prenom" id="prenom" required>
+                </div>
+
+                <div class="form_group">
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="form_group">
+                    <label for="message">Message :</label>
+                    <textarea name="message" id="message" required></textarea>
+                </div>
+
+                <div class="box_article">
+                    <button type="submit" class="btn_accueil">Envoyer</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_info">
+            <div class="footer_section">
+                <h3>Contact</h3>
+                <p>Gérant : Baptiste Nuytten</p>
+                <p>Téléphone : +33 1 23 45 67 89</p>
+                <p>Email : contact@resiva.fr</p>
+            </div>
+
+            <div class="footer_section">
+                <h3>Siège social</h3>
+                <p>Adresse : 10 rue Alfred Kastler, 14000 Caen, France</p>
+            </div>
+
+            <div class="footer_section">
+                <h3>Mentions légales</h3>
+                <p>© 2024 Résiva. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
